@@ -27,23 +27,23 @@ A sophisticated financial management web application designed specifically for m
 ## Screenshots 📸
 
 ### Financial Dashboard
-![Financial Dashboard](assets/dashboard_overview_usd.png)
+![Financial Dashboard](https://github.com/DukeAche/Cashflow-command/blob/main/asserts/dashboard_overview_usd.png)
 *Overview of financial health with key metrics*
 
 ### Multi-Currency Support
-![Multi-Currency Support](assets/dashboard_overview_gbp.png)
+![Multi-Currency Support](https://github.com/DukeAche/Cashflow-command/blob/main/asserts/dashboard_overview_gbp.png)
 *Seamless support for multiple currencies (e.g., GBP)*
 
 ### Interactive Charts
-![Cash Flow Analysis](assets/dashboard_charts.png)
+![Cash Flow Analysis](https://github.com/DukeAche/Cashflow-command/blob/main/asserts/dashboard_charts.png)
 *Visualize trends and income vs expenses*
 
 ### Transaction Ledger
-![Transaction Ledger](assets/transaction_ledger.png)
+![Transaction Ledger](https://github.com/DukeAche/Cashflow-command/blob/main/asserts/transaction_ledger.png)
 *Manage and edit transactions with ease*
 
 ### Monthly Reports
-![Monthly Reports](assets/monthly_reports.png)
+![Monthly Reports](https://github.com/DukeAche/Cashflow-command/blob/main/asserts/monthly_reports.png)
 *Detailed monthly summaries and export options*
 
 ## Technology Stack 🛠️
