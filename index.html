@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cashflow Commander - Financial Management Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 800px;
+            padding: 2rem;
+        }
+
+        .hero-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            animation: bounce 2s infinite;
+        }
+
+        .hero-title {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-desc {
+            opacity: 0.8;
+            font-size: 0.95rem;
+        }
+
+        .cta-section {
+            margin-top: 3rem;
+        }
+
+        .cta-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .cta-instructions {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 2rem 0;
+            text-align: left;
+        }
+
+        .instruction-step {
+            margin: 1rem 0;
+            padding-left: 2rem;
+            position: relative;
+        }
+
+        .instruction-step::before {
+            content: counter(step-counter);
+            counter-increment: step-counter;
+            position: absolute;
+            left: 0;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            width: 1.5rem;
+            height: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .download-section {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 0.5rem;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        .counter-reset {
+            counter-reset: step-counter;
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero-icon">💰</div>
+        <h1 class="hero-title">Cashflow Commander</h1>
+        <p class="hero-subtitle">
+            Your intelligent financial management dashboard for micro-business success. 
+            Track income, manage expenses, and visualize your financial runway with powerful analytics.
+        </p>
+
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <div class="feature-title">Real-time Dashboard</div>
+                <div class="feature-desc">Live financial metrics with interactive charts and key performance indicators</div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">💳</div>
+                <div class="feature-title">Smart Transactions</div>
+                <div class="feature-desc">Easy transaction entry with validation and automatic categorization</div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">📈</div>
+                <div class="feature-title">Visual Analytics</div>
+                <div class="feature-desc">Waterfall charts and trend analysis for deeper financial insights</div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">📋</div>
+                <div class="feature-title">Complete Ledger</div>
+                <div class="feature-desc">Full CRUD operations with editable data tables and filtering</div>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <h2 class="cta-title">🚀 Get Started with Cashflow Commander</h2>
+            
+            <div class="cta-instructions counter-reset">
+                <div class="instruction-step">
+                    <strong>Download the Application:</strong> Get all the necessary files to run Cashflow Commander locally
+                </div>
+                
+                <div class="instruction-step">
+                    <strong>Install Dependencies:</strong> Use pip to install the required Python packages
+                </div>
+                
+                <div class="instruction-step">
+                    <strong>Launch the App:</strong> Run the Streamlit application and start managing your finances
+                </div>
+                
+                <div class="instruction-step">
+                    <strong>Start Tracking:</strong> Add your first transaction and watch your dashboard come to life
+                </div>
+            </div>
+
+            <div class="download-section">
+                <h3 style="margin-bottom: 1rem;">📁 Download Application Files</h3>
+                <p style="margin-bottom: 1.5rem;">Get the complete Cashflow Commander application with all source code and documentation</p>
+                
+                <a href="#" class="download-btn" onclick="downloadFiles()">
+                    📦 Download Complete Package
+                </a>
+                
+                <div style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;">
+                    Includes: app.py, database.py, requirements.txt, README.md
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.2);">
+            <p style="font-size: 0.9rem; opacity: 0.7;">
+                💡 <strong>Tech Stack:</strong> Streamlit • SQLite • Pandas • Plotly • Python
+            </p>
+            <p style="font-size: 0.9rem; opacity: 0.7; margin-top: 0.5rem;">
+                Built for micro-business owners who need powerful financial insights without complexity
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function downloadFiles() {
+            // Create a simple alert to simulate download functionality
+            alert('📦 Download functionality would be implemented here.\n\nThe complete package includes:\n• app.py (Main application)\n• database.py (Database management)\n• requirements.txt (Dependencies)\n• README.md (Documentation)\n\nRun: pip install -r requirements.txt\nThen: streamlit run app.py');
+        }
+
+        // Add some interactive effects
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.feature-card');
+            
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.background = 'rgba(255, 255, 255, 0.15)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.background = 'rgba(255, 255, 255, 0.1)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
