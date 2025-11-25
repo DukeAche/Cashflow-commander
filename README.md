@@ -24,6 +24,28 @@ A sophisticated financial management web application designed specifically for m
 - **Export Capabilities**: CSV export for accountant integration
 - **Responsive Design**: Mobile-friendly interface
 
+## Screenshots 📸
+
+### Financial Dashboard
+![Financial Dashboard](assets/dashboard_overview_usd.png)
+*Overview of financial health with key metrics*
+
+### Multi-Currency Support
+![Multi-Currency Support](assets/dashboard_overview_gbp.png)
+*Seamless support for multiple currencies (e.g., GBP)*
+
+### Interactive Charts
+![Cash Flow Analysis](assets/dashboard_charts.png)
+*Visualize trends and income vs expenses*
+
+### Transaction Ledger
+![Transaction Ledger](assets/transaction_ledger.png)
+*Manage and edit transactions with ease*
+
+### Monthly Reports
+![Monthly Reports](assets/monthly_reports.png)
+*Detailed monthly summaries and export options*
+
 ## Technology Stack 🛠️
 
 - **Frontend**: Streamlit (latest version)
